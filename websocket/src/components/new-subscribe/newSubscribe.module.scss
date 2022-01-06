@@ -1,0 +1,13 @@
+@import "../../styles/colors.module";
+
+.wrapper {
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.input {
+  width: 100%;
+  max-width: 300px;
+}

@@ -1,0 +1,114 @@
+@import '../../styles/colors.module';
+
+.priceWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid $border;
+  white-space: nowrap;
+
+  &:hover {
+    background: $hover-background;
+
+    .unsubscribeButton {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
+  letter-spacing: .025em;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 1rem;
+
+  & > div:first-child {
+    color: $primary-text;
+    font-weight: bold;
+  }
+
+  & > div:last-child {
+    color: $secondary-text;
+  }
+}
+
+.priceChange {
+  padding: 0 10px;
+  background: transparent !important;
+
+  & > div:first-child {
+    font-size: 12px;
+    font-weight: 500;
+
+    &:after {
+      content: '%';
+    }
+  }
+
+  & > div:last-child {
+    font-size: 12px;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  min-width: 32px;
+  border-radius: 8px;
+  margin-right: 8px;
+  transform: translateY(calc(-100% + 32px));
+  transition: transform .2s linear;
+
+  .svgWrapper {
+    height: 16px;
+    margin: auto;
+  }
+}
+
+.redBackground {
+  background: $light-red-background;
+  color: $red-text;
+
+  & > span {
+    & > svg {
+      & > path {
+        fill: $red-text
+      }
+    }
+  }
+}
+
+.greenBackground {
+  background: $light-green-background;
+  color: $green-text;
+
+  & > span {
+    & > svg {
+      & > path {
+        fill: $green-text
+      }
+    }
+  }
+}
+
+.unsubscribeButton {
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  left: 91%;
+  top: 5%;
+  transform: rotate(45deg);
+}

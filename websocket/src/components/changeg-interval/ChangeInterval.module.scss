@@ -1,0 +1,21 @@
+@import "../../styles/colors.module";
+
+.wrapper {
+  padding: 14px;
+}
+
+.slider {
+  max-width: 350px;
+  width: 90%;
+  color: #ee7e66 !important;
+
+  span:first-child {
+    opacity: 1;
+    background-color: #e7e7e7;
+  }
+
+  span:nth-child(3) {
+    background-color: #fff;
+    border: 5px solid #ee7e66 !important;
+  }
+}

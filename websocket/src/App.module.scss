@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 100px;
+  padding: 14px;
+}
+
+.configuration {
+  display: flex;
+  justify-content: space-evenly;
+}
